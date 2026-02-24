@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Seminar_01_cts/Seminar_01_cts.iml" filepath="$PROJECT_DIR$/Seminar_01_cts/Seminar_01_cts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar_02_cts/Seminar_02_cts.iml" filepath="$PROJECT_DIR$/Seminar_02_cts/Seminar_02_cts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cts.iml" filepath="$PROJECT_DIR$/cts.iml" />
+    </modules>
+  </component>
+</project>
