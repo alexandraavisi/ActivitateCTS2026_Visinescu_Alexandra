@@ -7,15 +7,24 @@ import java.util.List;
 import java.util.Scanner;
 
 public abstract class AplicantReader {
-    public abstract List<Aplicant> readAplicanti(String file) throws FileNotFoundException;
+    protected String numeFisier;
+
+    public AplicantReader(String numeFisier) {
+
+        this.numeFisier = numeFisier;
+    }
+
+    public abstract List<Aplicant> readAplicanti() throws FileNotFoundException;
+
+
 
     protected Aplicant readAplicant(Scanner input, Aplicant outAplicant) {
         String nume = input.next();
-        String prenume = (input.next()).toString();
-        int varsta = Integer.valueOf(input.nextInt());
+        String prenume = input.next();
+        int varsta =input.nextInt();
         int punctaj = Integer.valueOf(input.nextInt());
         int nr = Integer.valueOf(input.nextInt());
-        String[] vect = new String[5];
+        String[] vect = new String[nr];
         for (int i = 0; i < nr; i++)
             vect[i] = input.next();
 

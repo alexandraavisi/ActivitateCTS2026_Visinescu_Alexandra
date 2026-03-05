@@ -13,12 +13,19 @@ import java.util.List;
 public class Program {
 
     public static void main(String[] args) {
+        Angajat.setValoareFinantareAngajat(50);
         List<Aplicant> listaAngajati;
-        AplicantReader angajatiReader = new AngajatiReader();
+
         try {
-            listaAngajati = angajatiReader.readAplicanti("angajati.txt");
+            AplicantReader angajatiReader = new AngajatiReader("angajati.txt");
+            listaAngajati = angajatiReader.readAplicanti();
             for(Aplicant angajat:listaAngajati)
+            {
                 System.out.println(angajat.toString());
+                System.out.println();
+                angajat.afiseazaFinantare();
+                angajat.afiseazaStatut();
+            }
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
