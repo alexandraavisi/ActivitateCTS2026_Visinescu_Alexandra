@@ -9,6 +9,7 @@ public class Main {
         Internare internare1 = new Internare(true, false, true, true, "Mihai Popescu");
         Internare internare2 = new Internare(false, false, false, false, "Diana Ionescu");
 
+
         InternareBuilder builder = new InternareBuilder("Marcel Constantin");
         Internare internare3 = builder.build();
 
